@@ -1,0 +1,3 @@
+[submodule "looking/themes/hugo-theme-cleanwhite"]
+	path = looking/themes/hugo-theme-cleanwhite
+	url = https://github.com/looking-vita-epfl/hugo-theme-cleanwhite.git
