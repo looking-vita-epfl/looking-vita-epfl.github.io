@@ -52,7 +52,7 @@ home = ["HTML", "RSS", "Algolia"]
   # reward_guide = "如果这篇文章对你有用,请随意打赏"
 
   # Activate features in sidebar
-  featured_tags = true
+  featured_tags = false
   featured_condition_size = 1
 
   friends = false
@@ -83,10 +83,7 @@ home = ["HTML", "RSS", "Algolia"]
   #xing          = "https://www.xing.com/profile/yourxingid"
   #git           = "full profile url for git user"
 
-  [[params.featured_tags]]
-  title = "Autonomous  Vehicles,  Computer  Vision,  DeepLearning,  Eye  Detection,  Human  Pose"
-
-  [[params.friend_link]]
+  [params.friend_link]
   title = "Linda的博客"
   href =  "https://zhaozhihan.com"
 
