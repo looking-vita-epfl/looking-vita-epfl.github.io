@@ -1,11 +1,13 @@
 ---
 layout:     post 
 title:      "Releasing the LOOK Dataset"
-subtitle:   "Hello World, Hello Blog"
+description: "A simple and detailed guideline for understanding and using the dataset"
+subtitle:   ""
+author: " LOOK dataset"
 date:       2021-11-04
 published: true
-URL: "/release"
-image:      "https://img.zhaohuabing.com/post-bg-2015.jpg"
+URL: "/Release"
+image:      "/images/look/kitti/000966.png"
 ---
 
 The LOOK dataset is **finally online**! Please look at the intructions below in order to understand how the dataset has been created.
