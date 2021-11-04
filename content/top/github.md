@@ -1,7 +1,4 @@
----
-title:      "Releasing the LOOK dataset"
-URL: "/top/github"
----
+
 # Visualization code
 
 Copy the following python file or download it from [here](/code/code/utils.py):

@@ -1,7 +1,3 @@
----
-title:      "Releasing the LOOK dataset"
-URL: "/top/dataset"
----
 
 # Download the dataset
 

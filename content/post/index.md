@@ -1,6 +1,11 @@
 ---
-title: "LOOK dataset"
-URL: "/"
+layout:     post 
+title:      "Releasing the LOOK Dataset"
+subtitle:   "Hello World, Hello Blog"
+date:       2021-11-04
+published: true
+URL: "/release"
+image:      "https://img.zhaohuabing.com/post-bg-2015.jpg"
 ---
 
 The LOOK dataset is **finally online**! Please look at the intructions below in order to understand how the dataset has been created.
