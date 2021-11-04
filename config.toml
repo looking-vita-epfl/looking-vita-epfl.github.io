@@ -13,7 +13,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS"]
 
 [params]
-  header_image = "images/look/nuscenes/nu3.jpg"
+  header_image = "images/background.jpg"
   SEOTitle = "-"
   keyword = "Autonomous  Vehicles,  Computer Vision,  Deep Learning,  Eye Contact Detection"
   slogan = "Do pedestrians pay attention? Eye contact detection in the wild - official website"

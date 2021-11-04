@@ -7,7 +7,7 @@
 <p></p>
 
 
-Download simply everything from [here](www.google.com).
+Download simply everything from [here](https://www.google.com). [Add link to zip file of full data in google drive]
 
 You want to download everything from raw data? Follow the steps here for each dataset:
 
@@ -50,7 +50,7 @@ To write
 
 {{< video mp4="/images/look/jrdb/out.mp4" >}}
 
-Download the JRDB train dataset from [here](https://download.cs.stanford.edu/downloads/jrdb/jrdb_train.zip). 
+Download the JRDB train dataset from [here](https://download.cs.stanford.edu/downloads/jrdb/jrdb_train.zip).
 
 #### Training set
 ---
@@ -89,4 +89,4 @@ Create an account at the Kitti Benchmark website and move to the [raw data](http
 
 #### Testing data
 
-Move to the 2d Object detection benchmark [here](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark). Download the first folder called ```Download left color images of object data set (12 GB)``` or directly using this [link](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip). Use the folder ```data_object_image_2/training/image_2```. 
+Move to the 2d Object detection benchmark [here](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark). Download the first folder called ```Download left color images of object data set (12 GB)``` or directly using this [link](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip). Use the folder ```data_object_image_2/training/image_2```.
