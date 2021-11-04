@@ -95,6 +95,15 @@ In addition, in Machine Learning it is really important to understand if the tra
 <h2 id=download-the-dataset>Download the dataset</h2>
 <p>The dataset is easy to download, please visit the <a href=/top/dataset>dataset section</a> to get the guidelines of how to download the dataset</p>
 <h2 id=how-the-data-is-annotated>How the data is annotated?</h2>
+<p>Some instances are really hard to label for humans, thus we need an aggregation of human annotations for this task.
+We use Amazon Mechanical Turk to label the images and collected annotations from 4 different annotators. Two main cases can happen while annotating this type of instances, first of all a case where at least 3 over 4 annotators agree on the label of the instance:</p>
+<p>
+<img src=/images/consensus1.png alt>
+</p>
+<p>The other case that can happen is when we are faced with a difficult case. If the consensus is not reached, the corresponding instance will be discarded.</p>
+<p>
+<img src=/images/noconsensus.png alt>
+</p>
 <hr>
 <ul class=pager>
 </ul>
