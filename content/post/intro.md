@@ -7,7 +7,7 @@ author: " LOOK dataset"
 date:       2021-11-04
 published: true
 URL: "/Release"
-image:      "/images/look/kitti/000966.png"
+image: "/images/look/kitti/000073_r.jpg"
 ---
 
 The LOOK dataset is **finally online**! Please look at the intructions below in order to understand how the dataset has been created.
@@ -27,7 +27,7 @@ Visit the [code](/top/github/) section to download the visualization script and 
 
 ## Understand the data format
 
-The annotation file consist of 
+The annotation file consist of a single file, containing
 
 ## Download the dataset
 
