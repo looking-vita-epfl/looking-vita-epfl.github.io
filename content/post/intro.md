@@ -34,3 +34,12 @@ The annotation file consist of a single file, containing
 The dataset is easy to download, please visit the [dataset section](/top/dataset) to get the guidelines of how to download the dataset
 
 ## How the data is annotated?
+
+Some instances are really hard to label for humans, thus we need an aggregation of human annotations for this task.
+We use Amazon Mechanical Turk to label the images and collected annotations from 4 different annotators. Two main cases can happen while annotating this type of instances, first of all a case where at least 3 over 4 annotators agree on the label of the instance:
+
+![](/images/consensus1.png)
+
+The other case that can happen is when we are faced with a difficult case. If the consensus is not reached, the corresponding instance will be discarded.
+
+![](/images/noconsensus.png)
