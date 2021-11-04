@@ -13,10 +13,9 @@ hasCJKLanguage = true
 home = ["HTML", "RSS"]
 
 [params]
-  #header_image = "images/look/nuscenes/nu4.jpg"
   header_image = "images/look/nuscenes/nu3.jpg"
-  SEOTitle = "Looking Dataset"
-  keyword = "Autonomous  Vehicles,  Computer  Vision,  DeepLearning,  Eye  Detection,  Human  Pose"
+  SEOTitle = "LOOK Dataset"
+  keyword = "Autonomous  Vehicles,  Computer Vision,  Deep Learning,  Eye Contact Detection"
   slogan = "Do pedestrians pay attention? Eye contact detection in the wild - official website"
 
   image_404 = "img/not-found.jpeg"
