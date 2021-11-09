@@ -7,7 +7,7 @@
 <p></p>
 
 
-Download simply everything from [here](https://www.google.com). [Add link to zip file of full data in google drive]
+Download simply everything from [here](https://drive.google.com/file/d/1fPTU5IZQtkb1ay1rjHNFYP0ta8RvAWlc/view?usp=sharing). [Add link to zip file of full data in google drive]
 
 You want to download everything from raw data? Follow the steps here for each dataset:
 
