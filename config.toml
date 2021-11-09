@@ -64,6 +64,7 @@ home = ["HTML", "RSS"]
   [[params.addtional_menus]]
   title =  "DATASET"
   href =  "/top/dataset/"
+  SEOTitle = "DATASET"
   [[params.addtional_menus]]
   title =  "AUTHORS"
   href =  "/top/authors/"
