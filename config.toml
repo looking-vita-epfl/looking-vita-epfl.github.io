@@ -14,7 +14,7 @@ home = ["HTML", "RSS"]
 
 [params]
   header_image = "images/background.jpg"
-  SEOTitle = "-"
+  SEOTitle = "LOOK Dataset"
   keyword = "Autonomous  Vehicles,  Computer Vision,  Deep Learning,  Eye Contact Detection"
   slogan = "Do pedestrians pay attention? Eye contact detection in the wild - official website"
 
