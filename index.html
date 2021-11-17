@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link rel="shortcut icon" type="image/x-icon" href="triangle.ico">
+	<title>LOOK | In-the-wild eye contact detection benchmark</title>
+	<meta name="keywords" content="eye contact, autonomous driving, machine-learning, multitask, computer vision, vision, EPFL, Swiss Federal Institute of Technology, Lausanne">
+	<meta name="description" content="Robust Learning Through Cross-Task Consistency EPFL, Stanford, UC Berkeley. We propose a flexible and fully computational framework for learning, while respecting consistency across an arbitrary dictionary of tasks.">
+	<!--meta name="google-site-verification" content="tBb4aimY-zxYS_s_z86g6faxMX2G_I_Wp_kzbF3U_RM" />--
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+	
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/background.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+	
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/index.css" />
+
+	<link type="text/css" rel="stylesheet" href="css/cvpr-video.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="triangle.ico">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89674082-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89674082-5');
+</script>
+
+
+</head>
+
+<body>
+	<!-- Header -->
+		<header id="home">
+			
+			<!-- Background Image -->
+			<div style=""  id='particles-js'>
+			</div>
+			
+			<!-- /Background Image -->
+
+			<!-- Nav -->
+			<nav id="nav" class="navbar nav-transparent">
+				<div class="container">
+
+					<div class="navbar-header">
+						<!-- Logo -->
+						<!-- /Logo -->
+
+						<!-- Collapse nav button -->
+						<div class="nav-collapse">
+							<span></span>
+						</div>
+						<!-- /Collapse nav button -->
+					</div>
+
+					<!--  Main navigation  -->
+					<ul class="main-nav nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#dataset">Dataset</a></li>
+						<li><a href="#paper">Paper</a></li>					
+						<li><a href="https://github.com/vita-epfl/looking">Code</a></li>
+						<li><a href="#team">Authors</a></li>
+						<li><a href="#licenses">Licenses</a></li>
+						<!-- <li class="has-dropdown"><a href="#blog">Blog</a> -->
+							<!-- <ul class="dropdown"> -->
+								<!-- <li><a href="blog-single.html">blog post</a></li> -->
+							<!-- </ul> -->
+						<!-- </li> -->
+						<!-- <li><a href="#contact">Contact</a></li> -->
+					</ul>
+					<!-- /Main navigation -->
+
+				</div>
+		</nav>
+		<!-- /Nav -->
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+
+						<!-- home content -->
+						<div class="col-md-10 col-md-offset-1">
+							<div class="home-content">
+								<h2 class="white-text">Do pedestrians pay attention? Eye contact detection in-the-wild</h2><br>
+								<h4 class="white-text">Paper under review - Submitted on 19.11.2021</h4>	
+								<!--h2 class="white-text">(<u>X-TAC</u>)</h2-->
+								<!--<h3 class="white-text">(Under Development. Please check after March 12 for live demo & final content)</h3>	-->
+			
+
+
+
+								<a class="white-text" href="https://younsbelkada.github.io/">Belkada Younes*</a><span style="opacity:0.7">,</span>
+								<a class="white-text" href="https://scholar.google.com/citations?user=f-4YHeMAAAAJ">Bertoni Lorenzo*</a><span style="opacity:0.7">,</span>
+								<a class="white-text" href="https://people.epfl.ch/romain.caristan">Caristan Romain</a><span style="opacity:0.7">,</span>
+								<a class="white-text" href="https://people.epfl.ch/taylor.mordan">Mordan Taylor</a><span style="opacity:0.7">,</span>
+								<br>
+								<a class="white-text" href="https://scholar.google.com/citations?user=UIhXQ64AAAAJ&hl=fr">Alexandre Alahi</a><span style="opacity:0.7">,</span>
+								<br>
+								<br>
+
+								
+								
+								<br>							
+								<button id="learnmore" class="outline-btn roundedbutton">Learn more</button>
+							</div>
+						</div>
+						<!-- /home content -->
+
+					</div>
+				</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+
+	<!-- Teaser -->
+	<div id="teaser" class="section bg-grey">
+			
+		<!-- Container 
+		<div class="container">
+			<div class="row" style="margin: 0px">
+
+				
+
+				<div class="col-md-12 col-sm-6">
+					<div class="service">
+						<div class="service-content service-row-2">																		
+							
+						<h3>Live Demo</h3>
+												
+
+						<p>
+						Upload an image to see results of learning with Cross-Task Consistency versus various baselines for different vision tasks.</p>
+						<br>
+						<a href="./demo"> <img width="6%" src="./img/icon-demo1.png" > </a>
+						
+						</div>
+						
+						
+						
+					</div>
+				</div>			
+				
+			</div> -->
+			
+			<!-- Row -->
+			<div class="row" style="margin: 0px">
+				
+				<!-- service -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service smoothscroll" href="#paper">
+						<div class="service-content service-row-1">																		
+							<i class="fa fa-file-text-o"></i>
+							<h3>Paper</h3>
+							<p>The paper and supplementary material.</p>
+							<a href="#paper">PDF</a>																					
+						</div>
+					</div>
+				</div>
+				
+				<!-- /service -->
+
+				<div class="col-md-3 col-sm-6">
+					<div class="service smoothscroll" href="#transfers"  onclick="window.location.href='#dataset'">
+						<div class="service-content  service-row-1">																		
+							<i class="fa fa-folder-open"></i>
+							<h3>Dataset</h3>
+							<p>Download the LOOK dataset ground truths</p>
+							<a href="#dataset">Dataset Page</a>							
+						</div>
+					</div>
+				</div>
+
+				<!-- service -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service smoothscroll" href="#transfers"  onclick="window.location.href='#visualization'">
+						<div class="service-content  service-row-1">																		
+							<i class="fa fa-video-camera"></i>
+							<h3>Visualization</h3>
+							<p>Examine the visualization of the LOOK dataset ground truths</p>
+							<a href="#visuals">Visualization Page</a>							
+						</div>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-3 col-sm-6">
+					<div class="service smoothscroll" href="https://github.com/vita-epfl/looking">
+							<div class="service-content service-row-1">																		
+							<i class="fa fa-github"></i>
+							<h3>Code</h3>
+							<p>The code for training and testing LOOK models and baselines.</p>
+							<a href="https://github.com/vita-epfl/looking">Get started</a>							
+
+						</div>
+					</div>
+				</div>
+				<!-- /service -->
+
+			
+			</div>
+			<!-- /Row -->
+
+			<!-- /Row -->			
+
+		</div>
+		<!-- /Container -->
+	</div>	
+	<!-- /Teaser -->
+
+
+
+
+
+	<!-- Abstract -->
+	<div id="abstract" class="section sm-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Quick Summary</h2>
+					<u><strong>What</strong></u> is in-the-wild eye contact detection, <u><strong>why</strong></u> is it important, and <u><strong>how</strong></u> do we define it?
+				</div>
+				
+				<!-- /Section header -->
+				<div class="abstract-body col-md-12">
+					<p> 
+						<div class="figure row">
+						<img width="80%" src="./img/pull_image_look.png" alt="" class="center">
+						<p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+							<strong>In-the-wild eye contact detection</strong> 
+							Typical scene for eye contact detection in the wild, where pedestrians might be far from the camera and heavily occluded. Our method estimates, from predicted body poses, whether people are paying attention (showed in green) through eye contact with a self-driving agent, or are distracted (showed in red). This information can then be used as an external modality to better forecast their behaviors and to reduce the risk of collision. 
+						
+						</p>
+						</div>
+						<br>
+
+						
+						<strong><u> Contributions </u> </strong>
+						<br>
+						This paper proposes a novel method for eye contact detection which is a practically important task to better understand and forecast human behaviors when it comes to autonomous driving scenarios. In particular, autonomous robots need to solve this task to navigate safely around humans. We have introduced a new deep learning approach for eye contact detection in the wild, <b>with no prior knowledge on the environment</b>, which is suited to the multiple challenges associated with this task. 
+						<br>
+						<br>
+						Through this work we also release <b>LOOK</b>, a large-scale dataset for eye contact detection in the wild. We designed it with real-world generalization in mind, by annotating three common autonomous driving datasets to consider cross-dataset training and evaluation, and focus on multiple scenarios and various environments.
+						<br>
+						<br>
+						
+					</p>
+
+					<div class="figure row">
+						<img width="80%" src="./img/looking.gif" alt=""  class="center">
+						<p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'> Prediction output from one of our trained models on our <b>LOOK</b> test set. By escaping from the 2D space of the image using low-dimensional information (human keypoints), the model is able to generalize over various scenarios and contexts
+					</div>
+
+	
+				</div>			
+
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	
+	<!-- /Summary -->
+
+	<!-- Tryit -->
+	<div id="dataset" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">LOOK Dataset</h2>
+					<u><strong> </strong></u>
+				</div>
+
+				</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Tryit -->
+
+	</div>
+	<!-- /Summary -->
+
+	<!-- /Sample Results -->
+
+
+
+
+	<!-- /Abstract -->
+
+	
+			
+
+	<!-- /Transfers -->
+			
+	<!-- Pretrained -->
+	
+	
+
+	
+
+	<!-- Paper -->
+
+	<div id="paper" class="section sm-padding bg-grey">
+		
+			<div class="section-header text-center">
+				<h2 class="title">Paper</h2>
+			</div>
+			<div class="container">	
+				<div class="row">
+					<div class="col-sm-6 col-xs-6">
+						<a href="./Cross_Task_Consistency_ARXIV2020.pdf">
+							<img style="width:30%" class="paper-img layered-paper-big" src=./img/paper_looking.png>
+						</a>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<p>Do pedestrians pay attention? Eye contact detection in the wild <br> <b>[Submitted to ITS journal]</b>
+						</p>									
+						<div class="bibtex">
+							<button class="outline-btn" onclick="window.location.href='https://github.com/vita-epfl/looking'"><p>Github<p></button>												
+						</div>	
+						<br><br>										
+						
+						<p>ARXIV 2020</p>						
+						
+						<div class="bibtex">
+						<button class="outline-btn" onclick="window.location.href='./Cross_Task_Consistency_ARXIV2020.pdf'"><p>PDF<p></button>						
+						</div>	<br>
+
+					</div>
+				<!--<button class="outline-btn" onclick="window.location.href='https://storage.googleapis.com/taskonomy_slides/taskonomy_slides.html'"><p>Slides<p></button>-->					
+				</div>	
+			</div>
+	</div>
+
+
+	<div id="team" class="section md-padding">
+		
+				<!-- Container -->
+				<div class="container">
+		
+					<!-- Row -->
+					<div class="row">
+		
+						<!-- Section header -->
+						<div class="section-header text-center">
+							<h2 class="title">Authors</h2>
+						</div>
+						<!-- /Section header -->
+
+						<!-- team -->
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="img/younes.jpeg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="https:://younesbelkada.github.io"><i class="fa fa-globe"></i></a>
+											<a href="https://scholar.google.com/citations?user=n8g3jJAAAAAJ"><i class="ai ai-google-scholar big-icon"></i></a>
+											<a href="//github.com/younesbelkada"><i class="fa fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>Younes Belkada</h3>
+									<span>Polytech Sorbonne, EPFL</span>
+								</div>
+							</div>
+						</div>
+						<!-- /team -->
+						
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="img/bertoni.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="https://people.epfl.ch/lorenzo.bertoni?lang=en"><i class="fa fa-globe"></i></a>
+											<a href="https://scholar.google.com/citations?user=f-4YHeMAAAAJ"><i class="ai ai-google-scholar big-icon"></i></a>
+											<a href="//github.com/bertoni9"><i class="fa fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>Lorernzo Bertoni</h3>
+									<span>EPFL</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="img/caristan.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="https://people.epfl.ch/romain.caristan?lang=en"><i class="fa fa-globe"></i></a>
+											<a href="https://scholar.google.com/citations?user=XXX"><i class="ai ai-google-scholar big-icon"></i></a>
+											<a href="//github.com/rocari96"><i class="fa fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>Romain Caristan</h3>
+									<span>EPFL</span>
+								</div>
+							</div>
+						</div>
+						<!-- team -->
+
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="img/tmordan.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="https://people.epfl.ch/taylor.mordan?lang=en"><i class="fa fa-globe"></i></a>
+											<a href="https://scholar.google.com/citations?user=XXX"><i class="ai ai-google-scholar big-icon"></i></a>
+											<a href="//github.com/taylormordan"><i class="fa fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>Taylor Mordan</h3>
+									<span>EPFL</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-2">
+							<div class="team">
+								<div class="team-img">
+									<img class="img-responsive" src="img/alex.jpg" alt="">
+									<div class="overlay">
+										<div class="team-social">
+											<a href="https://people.epfl.ch/taylor.mordan?lang=en"><i class="fa fa-globe"></i></a>
+											<a href="https://scholar.google.com/citations?user=UIhXQ64AAAAJ&hl=fr"><i class="ai ai-google-scholar big-icon"></i></a>
+											<a href="//github.com/taylormordan"><i class="fa fa-github"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3>Alexandre Alahi</h3>
+									<span>EPFL</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+	
+			<!-- /Team -->
+
+	<!-- Licenses -->
+
+	<div id="licenses" class="section sm-padding">
+		<div class="container">
+			<div class="row">
+				<div class="row">
+					<div class="section-header text-center">
+						<h2 class="title">Licenses</h2>
+					</div>
+					According to the official websites of <a href='https://jrdb.stanford.edu/dataset/about'> <b>JRDB</b></a>,  <a href='https://www.nuscenes.org/terms-of-use'> <b>Nuscenes</b> </a> and <a href='http://www.cvlibs.net/datasets/kitti/'> <b>Kitti</b></a>:
+					<div>JRDB Dataset is under <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0</a> Licence.</div>
+					<div>Kitti Dataset is under <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0</a> Licence.</div>
+					<div>Nuscenes Dataset is under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode'>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public</a> Licence.</div>
+					<br>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Licenses -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+ 
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="https://github.com/vita-epfl"><i class="fa fa-github"></i></a></li>
+ 
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2020. Swiss Federal Institute of Technology (EPFL). All Rights Reserved.</p>
+						<p>The source code of this website template is available <a href='https://github.com/EPFL-VILAB/project_website_template'>here</a> by <a href='http://vilab.epfl.ch/'>EPFL VILAB</a>.</p>
+
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<!-- <div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div> -->
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/plugins.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	
+	<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/particles.js"></script>	
+	<script src="js/app.js"></script>
+
+<!-- Start of counter Code -->
+<!--you can put some website tracker/counter code (eg Statcounter, Google Analytics) here if you're interested in tracking the activity on your website. -->
+<!-- End of counter Code -->
+
+</body>
+
+</html>
