@@ -156,50 +156,121 @@
 
 
 	<!-- Teaser -->
-	<div id="teaser" class="section bg-grey">
+
+
+
+
+	<div>
+		<br>
 
 	</div>
-
-
-
-
-
-    <div id="start" class="container">
+		
+	<div id="start" class="container">
 
         <!-- Row -->
         <div class="row">
 
             <!-- Section header -->
             <div class="section-header text-center">
-                <h2 class="title">LOOK Dataset</h2>
+                <h2 class="title">Creating LOOK Dataset</h2>
             </div>
 
             <!-- /Section header -->
             <div class="abstract-body col-md-12">
-                <h3 id="download-the-dataset">Download the datasets</h3>
-                <h4 id="manual-download">Manual download</h4>
-                <p>Start by creating a <code>LOOK</code> folder.</p>
-                <h5 id="annotations">Annotations</h5>
-                <p>You can download the LOOK annotation file <a href="https://drive.google.com/file/d/1fPTU5IZQtkb1ay1rjHNFYP0ta8RvAWlc/view?usp=sharing">here</a> and copy it inside the <code>LOOK</code> folder.</p>
-                <h5 id="nuscenes">Nuscenes</h5>
+				<h3 id="first">1. Preparation</h3>
+				<p>Start by creating a <code>LOOK</code> folder.</p>
+				<p>Dwnload the LOOK annotation file <a href="https://drive.google.com/file/d/1fPTU5IZQtkb1ay1rjHNFYP0ta8RvAWlc/view?usp=sharing">here</a> and copy it inside the <code>LOOK</code> folder.</p>
+                <h3 id="download-the-dataset">2. Download the images</h3>
+				</p>
+				The <strong>LOOK</strong> dataset is made of images from 3 different existing datasets where we annotated the pedestrians as looking (1) or not (0) at the camera.
+				</p>
+				<table>
+					<thead>
+					<tr>
+					<th align="center">Dataset</th>
+					<th align="center">Frames-</th>
+					<th align="center">Instances-</th>
+					<th align="center">Looking-</th>
+					<th align="center">Pedestrians</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+					<td align="center">nuScenes</td>
+					<td align="center">2,216</td>
+					<td align="center">13K</td>
+					<td align="center">9%</td>
+					<td align="center">7,100</td>
+					</tr>
+					<tr>
+					<td align="center">Kitti</td>
+					<td align="center">1,391</td>
+					<td align="center">4,630</td>
+					<td align="center">17%</td>
+					<td align="center">425</td>
+					</tr>
+					<tr>
+					<td align="center">JRDB</td>
+					<td align="center">9,441</td>
+					<td align="center">39K</td>
+					<td align="center">18%</td>
+					<td align="center">399</td>
+					</tr>
+					<tr>
+					<td align="center"><strong>LOOK</strong></td>
+					<td align="center"><strong>13K</strong></td>
+					<td align="center"><strong>57K</strong></td>
+					<td align="center"><strong>16%</strong></td>
+					<td align="center"><strong>7,944</strong></td>
+					</tr>
+					</tbody>
+					</table>
+	
+
+                <h3 id="nuscenes">Nuscenes</h3>
+				Nuscenes dataset contains mainly high resolution images taken from different places (US, Asia). Some scenarios are very crowded and common for self-driving cars.</p>
+				<li><strong>nuScenes</strong> contains 1600x900 .jpg images.</li>
+                        <div class="figure row">
+                            <img width="50%" src="../img/nuscenes.png" alt="" class="center">
+                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+
+                            </p>
+                        </div>
                 Go to <a href="https://www.nuscenes.org/download">Nuscenes official website</a> and download the <code>samples</code> and the <code>CAM_BACK_LEFT</code> <code>sweeps</code> from the server closest to your location (<code>US</code> or <code>ASIA</code>).
                 Create a <code>Nuscenes</code>folder inside the <code>LOOK</code> folder and extract the downloaded files there.</li>
-                <h5 id="jrdb">JRDB</h5>
+				</p>
+				<h3 id="jrdb">JRDB</h3>
+				JRDB is a dataset collected from a social mobile manipulator JackRabbot from Stanford University. The goal of JRDB is to provide a new source of data and a test-bench for research in the areas of autonomous robot navigation and all perceptual tasks related to social robotics in human environments.</p>
+				<li><strong>JRDB</strong> contains 752x480 .jpg images.</li>
+				<div class="figure row">
+					<img width="50%" src="../img/JRDB_1.jpg" alt="" class="center">
+					<p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+
+					</p>
+				</div>
                 <p>Create a folder <code>JRDB</code> inside <code>LOOK</code>.
                 Download the JRDB train dataset from <a href="https://download.cs.stanford.edu/downloads/jrdb/jrdb_train.zip">here</a> and extract it in the <code>JRDB</code> folder you just created.</p>
-                <h5 id="kitti">Kitti</h5>
+                <h3 id="kitti">Kitti</h3>
+				Kitti datset is captured by driving around the mid-size city of Karlsruhe, in rural areas and on highways. It is a common dataset and bechmark used for various tasks (3D object detection, depth estimation, ..)</p>
+				<li><strong>Kitti</strong> contains .png images at different resolutions.</li>
+                        <div class="figure row">
+                            <img width="50%" src="../img/kitti.png" alt="" class="center">
+                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+
+                            </p>
+                        </div>
                 <p>Inside the <code>LOOK</code>folder, create a <code>Kitti</code> folder.</p>
 
-                <h6 id="training-data">Training data</h6>
+                <h5 id="training-data">Training data</h5>
                 <p>Create an account at the Kitti Benchmark website and move to the <a href="http://www.cvlibs.net/datasets/kitti/raw_data.php">raw data</a> section. Download the <code>2011_09_29_drive_0071 [synced+rectified data]</code> folder, you can directly use <a href="https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_09_29_drive_0071/2011_09_29_drive_0071_sync.zip">this link</a>.</p>
                 <p>Unzip the folder and copy the <code>2011_09_29/2011_09_29_drive_0071_sync/image_03/data</code> folder into the <code>Kitti</code> folder you created. Rename it <code>train</code>.</p>
-                <h6 id="testing-data">Testing data</h6>
+                <h5 id="testing-data">Testing data</h5>
                 <p>Move to the 2d Object detection benchmark <a href="http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark">here</a>. Download the first folder called <code>Download left color images of object data set (12 GB)</code> or directly using this <a href="https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip">link</a>. Unzip the folder and copy the folder <code>data_object_image_2/training/image_2</code> into the <code>Kitti</code> folder. Rename it <code>test</code>.</p>
 
                 <br>
                 <br>
 
-                <h3 id="filter-the-dataset">Filter the dataset</h3>
+                <h3 id="filter-the-dataset">3. Filter the dataset</h3>
                 <p> To keep only the files with a <strong>LOOK</strong> annotation, you neeed to filter the datasets you previously downloaded. To do so, you can download the <a href="https://drive.google.com/file/d/1TuAFlKynvhKf3m5Agz-fAWL7X82g3k4j/view?usp=sharing">extract_look_dataset.py</a> python script.
                     This script allows you to extract only the annotated images and reorganize them in order the respect the paths of the LOOK dataset.
                     To run this script you need to use python 3 running and the pandas library. <br>
@@ -210,78 +281,7 @@
                 <br>
                 <br>
 
-                <h3 id="the-dataset">The dataset</h3>
-                <p>
-                    The <strong>LOOK</strong> dataset is made of images from 3 different existing datasets where we annotated the pedestrians as looking (1) or not (0) at the camera.
-                    <ul>
-                        <li><strong>nuScenes</strong> contains 1,600x900 .jpg images.</li>
-                        <div class="figure row">
-                            <img width="50%" src="../img/nuscenes.png" alt="" class="center">
-                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
-
-                            </p>
-                        </div>
-                        <li><strong>Kitti</strong> contains .png images at different resolutions.</li>
-                        <div class="figure row">
-                            <img width="50%" src="../img/kitti.png" alt="" class="center">
-                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
-
-                            </p>
-                        </div>
-                        <li><strong>JRDB</strong> contains 752x480 .jpg images.</li>
-                        <div class="figure row">
-                            <img width="50%" src="../img/JRDB_1.jpg" alt="" class="center">
-                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
-
-                            </p>
-                        </div>
-                    </ul>
-                </p>
-
-                <table>
-                <thead>
-                <tr>
-                <th align="center">Dataset</th>
-                <th align="center">Frames</th>
-                <th align="center">Instances</th>
-                <th align="center">Looking</th>
-                <th align="center">Pedestrians</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                <td align="center">nuScenes</td>
-                <td align="center">2,216</td>
-                <td align="center">13K</td>
-                <td align="center">9%</td>
-                <td align="center">7,100</td>
-                </tr>
-                <tr>
-                <td align="center">Kitti</td>
-                <td align="center">1,391</td>
-                <td align="center">4,630</td>
-                <td align="center">17%</td>
-                <td align="center">425</td>
-                </tr>
-                <tr>
-                <td align="center">JRDB</td>
-                <td align="center">9,441</td>
-                <td align="center">39K</td>
-                <td align="center">18%</td>
-                <td align="center">399</td>
-                </tr>
-                <tr>
-                <td align="center"><strong>LOOK</strong></td>
-                <td align="center"><strong>13K</strong></td>
-                <td align="center"><strong>57K</strong></td>
-                <td align="center"><strong>16%</strong></td>
-                <td align="center"><strong>7,944</strong></td>
-                </tr>
-                </tbody>
-                </table>
-
-
-                </div>
+                
             </div>
             <!-- /Row -->
 
