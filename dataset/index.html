@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" type="image/x-icon" href="triangle.ico">
+	<title>LOOK | In-the-wild eye contact detection benchmark</title>
+	<meta name="keywords" content="eye contact, autonomous driving, machine-learning, multitask, computer vision, vision, EPFL, Swiss Federal Institute of Technology, Lausanne">
+	<meta name="description" content="Robust Learning Through Cross-Task Consistency EPFL, Stanford, UC Berkeley. We propose a flexible and fully computational framework for learning, while respecting consistency across an arbitrary dictionary of tasks.">
+	<!--meta name="google-site-verification" content="tBb4aimY-zxYS_s_z86g6faxMX2G_I_Wp_kzbF3U_RM" />--
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../css/background.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="../css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="../css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="../css/magnific-popup.css" />
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../css/index.css" />
+
+	<link type="text/css" rel="stylesheet" href="../css/cvpr-video.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="triangle.ico">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	
+	<!--
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89674082-5"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-89674082-5'); -->
+</script>
+
+
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+
+		<!-- Background Image -->
+		<div style=""  id='particles-js'>
+		</div>
+
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="https://looking-vita-epfl.github.io/">Home</a></li>
+					<li><a href="https://looking-vita-epfl.github.io/dataset">Dataset</a></li>
+					<li><a href="https://looking-vita-epfl.github.io/#paper">Paper</a></li>
+					<li><a href="https://github.com/vita-epfl/looking">Code</a></li>
+					<li><a href="https://looking-vita-epfl.github.io/#team">Authors</a></li>
+					<li><a href="https://looking-vita-epfl.github.io/#licenses">Licenses</a></li>
+					<!-- <li class="has-dropdown"><a href="#blog">Blog</a> -->
+					<!-- <ul class="dropdown"> -->
+					<!-- <li><a href="blog-single.html">blog post</a></li> -->
+					<!-- </ul> -->
+					<!-- </li> -->
+					<!-- <li><a href="#contact">Contact</a></li> -->
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h2 class="white-text">Do pedestrians pay attention? Eye contact detection in-the-wild</h2><br>
+							<h4 class="white-text">Dataset creation page</h4>
+							<!--h2 class="white-text">(<u>X-TAC</u>)</h2-->
+							<!--<h3 class="white-text">(Under Development. Please check after March 12 for live demo & final content)</h3>	-->
+
+
+
+
+							<a class="white-text" href="https://younsbelkada.github.io/">Belkada Younes*</a><span style="opacity:0.7">,</span>
+							<a class="white-text" href="https://scholar.google.com/citations?user=f-4YHeMAAAAJ">Bertoni Lorenzo*</a><span style="opacity:0.7">,</span>
+							<a class="white-text" href="https://people.epfl.ch/romain.caristan">Caristan Romain</a><span style="opacity:0.7">,</span>
+							<a class="white-text" href="https://people.epfl.ch/taylor.mordan">Mordan Taylor</a><span style="opacity:0.7">,</span>
+							<br>
+							<a class="white-text" href="https://scholar.google.com/citations?user=UIhXQ64AAAAJ&hl=fr">Alexandre Alahi</a><span style="opacity:0.7">,</span>
+							<br>
+							<br>
+
+
+
+							<br>
+							<button id="learnmore" class="outline-btn roundedbutton"> <a href="#start">Get started</a></button>						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+
+	<!-- Teaser -->
+	<div id="teaser" class="section bg-grey">
+
+	</div>
+
+
+
+
+
+    <div id="start" class="container">
+
+        <!-- Row -->
+        <div class="row">
+
+            <!-- Section header -->
+            <div class="section-header text-center">
+                <h2 class="title">LOOK Dataset</h2>
+            </div>
+
+            <!-- /Section header -->
+            <div class="abstract-body col-md-12">
+                <h3 id="download-the-dataset">Download the datasets</h3>
+                <h4 id="manual-download">Manual download</h4>
+                <p>Start by creating a <code>LOOK</code> folder.</p>
+                <h5 id="annotations">Annotations</h5>
+                <p>You can download the LOOK annotation file <a href="https://drive.google.com/file/d/1fPTU5IZQtkb1ay1rjHNFYP0ta8RvAWlc/view?usp=sharing">here</a> and copy it inside the <code>LOOK</code> folder.</p>
+                <h5 id="nuscenes">Nuscenes</h5>
+                Go to <a href="https://www.nuscenes.org/download">Nuscenes official website</a> and download the <code>samples</code> and the <code>CAM_BACK_LEFT</code> <code>sweeps</code> from the server closest to your location (<code>US</code> or <code>ASIA</code>).
+                Create a <code>Nuscenes</code>folder inside the <code>LOOK</code> folder and extract the downloaded files there.</li>
+                <h5 id="jrdb">JRDB</h5>
+                <p>Create a folder <code>JRDB</code> inside <code>LOOK</code>.
+                Download the JRDB train dataset from <a href="https://download.cs.stanford.edu/downloads/jrdb/jrdb_train.zip">here</a> and extract it in the <code>JRDB</code> folder you just created.</p>
+                <h5 id="kitti">Kitti</h5>
+                <p>Inside the <code>LOOK</code>folder, create a <code>Kitti</code> folder.</p>
+
+                <h6 id="training-data">Training data</h6>
+                <p>Create an account at the Kitti Benchmark website and move to the <a href="http://www.cvlibs.net/datasets/kitti/raw_data.php">raw data</a> section. Download the <code>2011_09_29_drive_0071 [synced+rectified data]</code> folder, you can directly use <a href="https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_09_29_drive_0071/2011_09_29_drive_0071_sync.zip">this link</a>.</p>
+                <p>Unzip the folder and copy the <code>2011_09_29/2011_09_29_drive_0071_sync/image_03/data</code> folder into the <code>Kitti</code> folder you created. Rename it <code>train</code>.</p>
+                <h6 id="testing-data">Testing data</h6>
+                <p>Move to the 2d Object detection benchmark <a href="http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark">here</a>. Download the first folder called <code>Download left color images of object data set (12 GB)</code> or directly using this <a href="https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip">link</a>. Unzip the folder and copy the folder <code>data_object_image_2/training/image_2</code> into the <code>Kitti</code> folder. Rename it <code>test</code>.</p>
+
+                <br>
+                <br>
+
+                <h3 id="filter-the-dataset">Filter the dataset</h3>
+                <p> To keep only the files with a <strong>LOOK</strong> annotation, you neeed to filter the datasets you previously downloaded. To do so, you can download the <a href="https://drive.google.com/file/d/1TuAFlKynvhKf3m5Agz-fAWL7X82g3k4j/view?usp=sharing">extract_look_dataset.py</a> python script.
+                    This script allows you to extract only the annotated images and reorganize them in order the respect the paths of the LOOK dataset.
+                    To run this script you need to use python 3 running and the pandas library. <br>
+                    To be able to run the script you need to input the name of the dataset(s) you want to filter and the path to the annotation file.
+                    To run the script for all the datasets, you can navigate inside the <code>LOOK</code> folder in a terminal window and run the command <br>
+                    <code>python extract_look_dataset.py -d Nuscenes,Kitti,JRDB -a LOOK_annotations.csv</code>.
+                </p>
+                <br>
+                <br>
+
+                <h3 id="the-dataset">The dataset</h3>
+                <p>
+                    The <strong>LOOK</strong> dataset is made of images from 3 different existing datasets where we annotated the pedestrians as looking (1) or not (0) at the camera.
+                    <ul>
+                        <li><strong>nuScenes</strong> contains 1,600x900 .jpg images.</li>
+                        <div class="figure row">
+                            <img width="50%" src="./img/nuscenes.png" alt="" class="center">
+                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+
+                            </p>
+                        </div>
+                        <li><strong>Kitti</strong> contains .png images at different resolutions.</li>
+                        <div class="figure row">
+                            <img width="50%" src="./img/kitti.png" alt="" class="center">
+                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+
+                            </p>
+                        </div>
+                        <li><strong>JRDB</strong> contains 752x480 .jpg images.</li>
+                        <div class="figure row">
+                            <img width="50%" src="./img/JRDB_1.jpg" alt="" class="center">
+                            <p class='col-sm-10 col-sm-offset-1' style='text-align: justify;'>
+
+                            </p>
+                        </div>
+                    </ul>
+                </p>
+
+                <table>
+                <thead>
+                <tr>
+                <th align="center">Dataset</th>
+                <th align="center">Frames</th>
+                <th align="center">Instances</th>
+                <th align="center">Looking</th>
+                <th align="center">Pedestrians</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td align="center">nuScenes</td>
+                <td align="center">2,216</td>
+                <td align="center">13K</td>
+                <td align="center">9%</td>
+                <td align="center">7,100</td>
+                </tr>
+                <tr>
+                <td align="center">Kitti</td>
+                <td align="center">1,391</td>
+                <td align="center">4,630</td>
+                <td align="center">17%</td>
+                <td align="center">425</td>
+                </tr>
+                <tr>
+                <td align="center">JRDB</td>
+                <td align="center">9,441</td>
+                <td align="center">39K</td>
+                <td align="center">18%</td>
+                <td align="center">399</td>
+                </tr>
+                <tr>
+                <td align="center"><strong>LOOK</strong></td>
+                <td align="center"><strong>13K</strong></td>
+                <td align="center"><strong>57K</strong></td>
+                <td align="center"><strong>16%</strong></td>
+                <td align="center"><strong>7,944</strong></td>
+                </tr>
+                </tbody>
+                </table>
+
+
+                </div>
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Tryit -->
+
+    </div>
