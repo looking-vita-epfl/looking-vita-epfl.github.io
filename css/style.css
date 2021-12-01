@@ -122,6 +122,24 @@ a.white-text:hover, a.white-text:focus {
     color: #6195FF;    
 }
 
+.white-text2 {
+    color: #fff;
+}
+
+a.white-text2 {
+    color: #FFF;    
+    opacity: 0.8;
+    text-decoration: none;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+a.white-text2:hover, a.white-text:focus {
+    text-decoration: none;
+    outline: none;
+    opacity: 0.8;
+    color: #00ff7c;    
+}
 
 
 ::-moz-selection {
