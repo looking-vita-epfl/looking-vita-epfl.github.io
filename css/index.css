@@ -28,7 +28,7 @@
     position : absolute;
     z-index:0;
     /*background-image: url('{{ site.baseurl }}/img/black.gif'); */
-    background-image: url('https://media.githubusercontent.com/media/younesbelkada/test_page/main/img/black.gif'); 
+    background-image: url('https://github.com/looking-vita-epfl/looking-vita-epfl.github.io/blob/jeykill/img/black.gif?raw=true'); 
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
