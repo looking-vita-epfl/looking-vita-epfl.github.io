@@ -9,9 +9,9 @@
 
 Download simply everything from [here](https://drive.google.com/file/d/1fPTU5IZQtkb1ay1rjHNFYP0ta8RvAWlc/view?usp=sharing). [Add link to zip file of full data in google drive]
 
-To download the recent annotations of STIP dataset, download the annotations following [this link](https://drive.google.com/file/d/1r0R-OAlMLoGs-kOJkOnIWUWyZgV5xxWg/view?usp=sharing)
-
 You want to download everything from raw data? Follow the steps here for each dataset:
+
+**new**: get the STIP annotations from [this link](https://drive.google.com/file/d/1r0R-OAlMLoGs-kOJkOnIWUWyZgV5xxWg/view?usp=sharing)
 
 ## Manual download
 
@@ -93,6 +93,6 @@ Create an account at the Kitti Benchmark website and move to the [raw data](http
 
 Move to the 2d Object detection benchmark [here](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark). Download the first folder called ```Download left color images of object data set (12 GB)``` or directly using this [link](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip). Use the folder ```data_object_image_2/training/image_2```.
 
-### STIP
+### STIP dataset 
 
-Get the annotations of STIP dataset directly from [this link](https://drive.google.com/file/d/1r0R-OAlMLoGs-kOJkOnIWUWyZgV5xxWg/view?usp=sharing)
+[Click this link](https://drive.google.com/file/d/1r0R-OAlMLoGs-kOJkOnIWUWyZgV5xxWg/view?usp=sharing) to get the annotations of STIP dataset.
